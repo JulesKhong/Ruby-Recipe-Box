@@ -20,3 +20,13 @@ a {
 .glyphicon {
   color: #ffcc66;
 }
+
+.btn-default {
+  border: 1px solid #999999;
+  color: #555555;
+}
+
+.btn-default:hover {
+  border: 1px solid #ffb366;
+  background-color: #fff2e6;
+}

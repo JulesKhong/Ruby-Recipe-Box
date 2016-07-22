@@ -60,12 +60,12 @@ post('/recipes/new') do
   @ingred3 = Ingredient.find_or_create_by({:name => ingredient_3})
   @ingred4 = Ingredient.find_or_create_by({:name => ingredient_4})
   @ingred5 = Ingredient.find_or_create_by({:name => ingredient_5})
+  @recipes = Recipe.all()
   recipe.ingredients.push(@ingred1)
   recipe.ingredients.push(@ingred2)
   recipe.ingredients.push(@ingred3)
   recipe.ingredients.push(@ingred4)
   recipe.ingredients.push(@ingred5)
-  @recipes = Recipe.all()
   erb(:index)
 end
 
